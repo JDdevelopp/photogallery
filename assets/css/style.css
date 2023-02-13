@@ -18,7 +18,7 @@ body{
     cursor: pointer;
 }
 .img-gallery img:hover{
-    transform: scale(0.9);
+    transform: scale(1.1);
     border-radius:20px;
     box-shadow:0 30px 20px rgb(16, 17, 29);
     transition: 0.5s;
