@@ -3,48 +3,43 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="assets/css/style.css">
-    <title>Gallery</title>
+    <link rel="stylesheet" href="assets/css/pass.css">
+    <title>Document</title>
 </head>
 <body>
-    <div class="banner">
-        <nav class="navbar">
-            <ul>
-                <li><a href="">Home</a></li>
-                <li><a href="">Gallery</a></li>
-                <li><a href="">Contact</a></li>
-            </ul>
-        </nav>
-    </div>
-    <div class="full-img" id="fullImgBox">
-        <img src="assets/images/twitter_profile(1-8-2022).png" alt="" id="fullImg">
-        <span onclick="closeFullImg()">X</span>
-    </div>
-    <div class="img-gallery">
-        <img src="assets/images/paint1.jpg" onclick="openFullImg(this.src)">
-        <img src="assets/images/paint2.jpg" onclick="openFullImg(this.src)">
-        <img src="assets/images/paint3.jpg" onclick="openFullImg(this.src)">
-        <img src="assets/images/paint7.jpg" onclick="openFullImg(this.src)">
-        <img src="assets/images/paint8.jpg" onclick="openFullImg(this.src)">
-        <img src="assets/images/paint5.jpg" onclick="openFullImg(this.src)">
-        <img src="assets/images/paint4.jpg" onclick="openFullImg(this.src)">
-        <img src="assets/images/paint6.jpg" onclick="openFullImg(this.src)">
+    <div id="preloader"></div>
+    <div class="redirector_box">
+        <div class="profile_img">
+            <img src="assets/images/profile_pic.png" alt="">
+        </div>
+        <div class="info">
+            <h1>PASSWORD PROTECTION</h1>
+            <p class="grey-body">You will be access the photo gallery only if the password is known to you.</p>
+        </div>
+        <div class="btn-box">
+            <form>
+                <input class="btn" type="button" value="ENTER PASSWORD" onClick="passWord()">
+            </form>
+        </div>
     </div>
 
-<script>
-    var fullImgBox = document.getElementById("fullImgBox");
-    var fullImg = document.getElementById("fullImg");
-
-    function openFullImg(pic){
-        fullImgBox.style.display = "flex";
-        fullImg.src = pic;
-    }
-
-    function closeFullImg() {
-        fullImgBox.style.display = "none";   
-    }
-
-
-</script>
+    <SCRIPT>
+        function passWord() {
+            var testV = 1;
+            var pass1 = prompt('Please Enter Your Password','');
+            while (testV < 3) {
+                if (!pass1) history.go(-1);
+                if (pass1.toLowerCase() == "ok") {
+                    alert('You Got it Right!');
+                    window.open('https://jddevelopp.github.io/photogallery/home.html');
+                    break;
+                } 
+                testV+=1;
+                var pass1 = prompt('Access Denied - Password Incorrect, Please Try Again.','Password');
+            }
+            if (pass1.toLowerCase()!="password" & testV ==3) history.go(-1);
+            return "";
+        }
+        </SCRIPT>
 </body>
 </html>

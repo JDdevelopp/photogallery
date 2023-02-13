@@ -1,0 +1,50 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Gallery</title>
+</head>
+<body>
+    <div class="banner">
+        <nav class="navbar">
+            <ul>
+                <li><a href="">Home</a></li>
+                <li><a href="">Gallery</a></li>
+                <li><a href="">Contact</a></li>
+            </ul>
+        </nav>
+    </div>
+    <div class="full-img" id="fullImgBox">
+        <img src="assets/images/twitter_profile(1-8-2022).png" alt="" id="fullImg">
+        <span onclick="closeFullImg()">X</span>
+    </div>
+    <div class="img-gallery">
+        <img src="assets/images/paint1.jpg" onclick="openFullImg(this.src)">
+        <img src="assets/images/paint2.jpg" onclick="openFullImg(this.src)">
+        <img src="assets/images/paint3.jpg" onclick="openFullImg(this.src)">
+        <img src="assets/images/paint7.jpg" onclick="openFullImg(this.src)">
+        <img src="assets/images/paint8.jpg" onclick="openFullImg(this.src)">
+        <img src="assets/images/paint5.jpg" onclick="openFullImg(this.src)">
+        <img src="assets/images/paint4.jpg" onclick="openFullImg(this.src)">
+        <img src="assets/images/paint6.jpg" onclick="openFullImg(this.src)">
+    </div>
+
+<script>
+    var fullImgBox = document.getElementById("fullImgBox");
+    var fullImg = document.getElementById("fullImg");
+
+    function openFullImg(pic){
+        fullImgBox.style.display = "flex";
+        fullImg.src = pic;
+    }
+
+    function closeFullImg() {
+        fullImgBox.style.display = "none";   
+    }
+
+
+</script>
+</body>
+</html>
