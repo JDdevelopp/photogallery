@@ -50,18 +50,19 @@ body{
     color: white;
     cursor:pointer ;
 }
+
+
 .banner{
     background: #1b1b1b;
-    height:100px;
+    height:80px;
     top: 0;
     position: sticky;
-    display: block;
     z-index: 100;
 }
 .banner .navbar{
-    padding: 5px;
+    padding: px;
     text-align: center;
-    line-height: 75px;
+    line-height: 80px;
     letter-spacing: 2px;
     word-spacing: 15px;
 }
@@ -73,4 +74,14 @@ body{
     color: white;
     text-decoration: none;
     font-size: 20px;
+    padding: 10px;
+    font-weight: bold;
+    border-radius: 20px;
+}
+.banner .navbar ul li a:hover{
+    color: black;
+    background: white;
+}
+.banner .navbar ul li a:not(:hover){
+    transition: 1s;
 }
