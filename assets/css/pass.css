@@ -16,6 +16,14 @@ h1{
     letter-spacing: 3px;
     font-size: 40px;
 }
+#preloader{
+    background: black url('../images/preloader3.gif') no-repeat center center;
+    background-size: 750px;
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    z-index: 100;
+}
 .redirector_box{
     background: #1b1b1b;
     border-radius: 50px;
