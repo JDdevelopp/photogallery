@@ -11,41 +11,37 @@
     <div class="banner">
         <nav class="navbar">
             <ul>
-                <li><a href="">Home</a></li>
-                <li><a href="">Gallery</a></li>
-                <li><a href="">Contact</a></li>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="contact.html">Contact</a></li>
             </ul>
         </nav>
     </div>
-    <div class="full-img" id="fullImgBox">
-        <img src="assets/images/twitter_profile(1-8-2022).png" alt="" id="fullImg">
-        <span onclick="closeFullImg()">X</span>
+    <div class="btn-container-box">
+        <div class="btn-container-box-profile-box">
+            <img class="btn-container-box-profile" src="assets/images/profile_pic.png" alt="">
+        </div>
+        <div class="btn-container-box-info">
+            <h1>Welcome to the Gallery...</h1>
+            <p>
+                Tap the button below to enter the gallery.
+            </p>
+        </div>
+        <div class="gallery-btn-box">
+            <a href="gallery.html">
+                <button class="gallery-btn">Go To Gallery</button>
+            </a>
+        </div>
     </div>
-    <div class="img-gallery">
-        <img src="assets/images/paint1.jpg" onclick="openFullImg(this.src)">
-        <img src="assets/images/paint2.jpg" onclick="openFullImg(this.src)">
-        <img src="assets/images/paint3.jpg" onclick="openFullImg(this.src)">
-        <img src="assets/images/paint7.jpg" onclick="openFullImg(this.src)">
-        <img src="assets/images/paint8.jpg" onclick="openFullImg(this.src)">
-        <img src="assets/images/paint5.jpg" onclick="openFullImg(this.src)">
-        <img src="assets/images/paint4.jpg" onclick="openFullImg(this.src)">
-        <img src="assets/images/paint6.jpg" onclick="openFullImg(this.src)">
-    </div>
+
+        <!-- <div class="gallery-btn-box">
+            <a href="gallery.html">
+                <button class="gallery-btn">
+                    Go To Gallery
+                </button>
+            </a>
+        </div> -->
 <script src="assets/js/preloader.js"></script>
-<script>
-    var fullImgBox = document.getElementById("fullImgBox");
-    var fullImg = document.getElementById("fullImg");
 
-    function openFullImg(pic){
-        fullImgBox.style.display = "flex";
-        fullImg.src = pic;
-    }
-
-    function closeFullImg() {
-        fullImgBox.style.display = "none";   
-    }
-
-
-</script>
 </body>
 </html>
