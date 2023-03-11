@@ -5,32 +5,27 @@ function passWord() {
         if (!pass1) history.go(-1);
         if (pass1.toLowerCase() == "jagrata") {
             alert('✅ Password Matched!');
-            window.close("https://jddevelopp.github.io/photogallery/")
-            window.open('https://jddevelopp.github.io/photogallery/home.html');
+            window.location.replace("https://jddevelopp.github.io/photogallery/home.html");
             break;
         }
         if (pass1.toLowerCase() == "siddharth") {
             alert('✅ Password Matched!');
-            window.close("https://jddevelopp.github.io/photogallery/")
-            window.open('https://jddevelopp.github.io/photogallery/home.html');
+            window.location.replace("https://jddevelopp.github.io/photogallery/home.html");
             break;
         }
         if (pass1.toLowerCase() == "radhika") {
             alert('✅ Password Matched!');
-            window.close("https://jddevelopp.github.io/photogallery/")
-            window.open('https://jddevelopp.github.io/photogallery/home.html');
+            window.location.replace("https://jddevelopp.github.io/photogallery/home.html");
             break;
         } 
         if (pass1.toLowerCase() == "shreya") {
             alert('✅ Password Matched!');
-            window.close("https://jddevelopp.github.io/photogallery/")
-            window.open('https://jddevelopp.github.io/photogallery/home.html');
+            window.location.replace("https://jddevelopp.github.io/photogallery/home.html");
             break;
         } 
         if (pass1.toLowerCase() == "yashoda") {
             alert('✅ Password Matched!');
-            window.close("https://jddevelopp.github.io/photogallery/")
-            window.open('https://jddevelopp.github.io/photogallery/home.html');
+            window.location.replace("https://jddevelopp.github.io/photogallery/home.html");
             break;
         } 
         testV+=1;
