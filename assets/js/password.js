@@ -8,6 +8,18 @@ function passWord() {
             window.close("https://jddevelopp.github.io/photogallery/")
             window.open('https://jddevelopp.github.io/photogallery/home.html');
             break;
+        }
+        if (pass1.toLowerCase() == "ok") {
+            alert('✅ Password Matched!');
+            window.close("https://jddevelopp.github.io/photogallery/")
+            window.open('https://jddevelopp.github.io/photogallery/home.html');
+            break;
+        }
+        if (pass1.toLowerCase() == "i") {
+            alert('✅ Password Matched!');
+            window.close("https://jddevelopp.github.io/photogallery/")
+            window.open('https://jddevelopp.github.io/photogallery/home.html');
+            break;
         } 
         testV+=1;
         var pass1 = prompt('❌ Access Denied - Incorrect Password, Please Try Again.','Password');
